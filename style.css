@@ -1,0 +1,48 @@
+body {
+  margin: 0;
+  background-color: black;
+  color: #00ff00;
+  font-family: 'Courier New', Courier, monospace;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.overlay {
+  position: absolute;
+  top: 20px;
+  background-color: black;
+  color: rgb(53, 109, 214);
+  padding: 10px 20px;
+  font-size: 1.2em;
+  border-radius: 5px;
+  z-index: 2;
+}
+
+.terminal {
+  background-color: #000;
+  color: #00aaff;          /* azul clarinho */
+  font-family: monospace;
+  padding: 80px;
+  width: 60%;
+  height: 300px;
+  margin: 0 auto;
+  border-radius: 5px;
+  box-shadow: 0 0 10px #00aaff;   /* brilho azul */
+  
+  display: block;
+  text-align: center;
+  white-space: pre-wrap;
+  overflow-y: auto;
+}
+
+
+
+
+pre {
+  margin: 0;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}

@@ -28,10 +28,10 @@ $$$$$$$$$$$$$  $           $$$$$$$$$$$  $
               $$$$         $$$$$$$$$$$$  $ 
               $$$              $$$    $$$$$
              $$$$                       $$$
-             $$$                         $$                               
-             $$$                                                               
-             $$$                                                               
-              $$$                                                              
+             $$$                         $$
+             $$$                           
+             $$$                           
+              $$$                          
     $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$     
     $$         $$$  $ $ $ $$$$$$$$$$$$     
     $$         $$$$  $$$$$$$$$$$$$$$$$     
@@ -63,6 +63,7 @@ $$                $ $ $$$$$$$$$$$$$$$$$$$$
             $$$$$$$$$$$$$$$$$$             
               
     eu te amo 💙!
+
 `;
 
 const terminalText = document.getElementById("terminalText");
@@ -95,13 +96,8 @@ function showEncrypted() {
 }
 
 document.addEventListener("DOMContentLoaded", showEncrypted);
-
 document.addEventListener("keydown", (e) => {
   if (e.key === "Enter") {
     decryptText();
   }
-});
-
-document.addEventListener("touchstart", () => {
-  decryptText();
 });
